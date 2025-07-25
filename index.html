@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+</head>
+<body>
+    <script src="formvalidate.js"></script>
+    <center>
+        <h1>REGISTRATION FORM</h1>
+        <form onsubmit="return validate()" method="get" id="f1">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="textarea" id="addr"></td>
+                </tr>
+                <tr>
+                    <td>Phno</td>
+                    <td><input type="text" id="phno"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" id="username"></td>
+                </tr>
+                <tr>
+                    <td>Select State</td>
+                    <td>
+                        <select id="state">
+                        <option selected value="default">Please Choose State</option>
+                        <option>Tamil Nadu</option>
+                        <option>Andhra Pradesh</option>
+                        <option>Kerala</option>
+                        <option>Karnataka</option>
+                        </select></td>
+                </tr>
+            </table>
+            <button id="submit" onsubmit="return validate()">Submit</button>
+        </form>
+    </center>
+</body>
+</html>
